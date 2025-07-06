@@ -1,14 +1,20 @@
 
-#posicao {
+#posicao,#posicao2 {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
     height: auto;
     width: 95vw;
-    margin-top: 10vh;
+    margin-top: 14vh;
     border: 2px solid #3e3e3e;
     border-radius: 12px;
+    padding: 2%;
+}
+
+#posicao2{
+    margin:1%;
+    justify-content: space-around;
 }
 
 #imgcontain {
@@ -35,7 +41,7 @@ p{
     #posicao{
         flex-direction: column;
         height: auto;
-        padding: 2%;
+        padding: 1.5%;
     }
 
     #contain1{
@@ -47,7 +53,7 @@ p{
 
     #imgcontain {
     height: auto;
-    width: 90%;
+    width: 100%;
     border-radius: 12px;
     }
 }

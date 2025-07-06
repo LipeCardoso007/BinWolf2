@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="CSS/Header.css">
   <link rel="stylesheet" href="CSS/AnimationHeader.css">
   <link rel="stylesheet" href="CSS/lateral.css">
+  <link rel="stylesheet" href="CSS/carrosseul.css">
 
 </head>
 
@@ -26,7 +27,7 @@
 
     <div id="Header2" class="HeaderContain">
 
-      <button class="bntheader">CONTATO DIRETO</button>
+      <button class="bntheader">PORTIFÓLIO</button>
 
       <button class="bntheader">SERVIÇOS</button>
 
@@ -38,7 +39,7 @@
 
         <button id="submenu2" class="bntheader" onclick="trocarbutao(),alterarborda()">LOGIN</button>
 
-        <div id="submenuheader">
+        <div id="submenuheader" class="fade-in">
 
           <button class="bntsubmenucima">ENTRAR</button>
           <button class="bntsubmenubaixo">CADASTRAR</button>
@@ -68,13 +69,37 @@
     </div>
 
     <div id="contain2">
+
       <h1>SOBRE NÓS</h1>
       <P>A equipe BinWolf sempre a disposição. Criamos sites sob medida para todos: do pequeno empreendedor à grande empresa, unindo simplicidade e profissionalismo para destacar sua presença online.</P>
+
     </div>
 
   </div>
 
+  <div id="posicao2">
+    <div class="carrossel">
+        <div class="imagem-container">
+          <img id="carrossel-img" src="IMG/A.jpg" alt="Criação e Desenvolvimento de Sites">
+          <button class="seta esquerda" onclick="anteriorSlide()">⭠</button>
+          <button class="seta direita" onclick="proximoSlide()">⭢</button>
+        </div>
+    </div>
+
+    <div class="descricao">
+      <h3 id="carrossel-titulo">Criação e Desenvolvimento de Sites</h3>
+      <p id="carrossel-texto">
+      Site para pizzaria com sistema de cardápio online e pedidos por WhatsApp.
+      </p>
+    </div>
+  </div>
+
+
+
+
+
   <script src="SCRIPT/script.js"></script>
+  <script src="SCRIPT/carrossel.js"></script>
 
 </body>
 
